@@ -2006,7 +2006,7 @@
 				if (this.getCurrentDirectory() !== '/') {
 					this.changeDirectory('/');
 					// TODO: read error message from exception
-					OC.Notification.show(t('files', 'Storage is temporarily not available'),
+					OC.Notification.show(t('files', 'Storage is not available: ' + result.message),
 						{type: 'error'}
 					);
 				}

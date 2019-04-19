@@ -49,6 +49,7 @@ class StorageNotAvailableException extends HintException {
 	const STATUS_UNAUTHORIZED = 4;
 	const STATUS_TIMEOUT = 5;
 	const STATUS_NETWORK_ERROR = 6;
+	const STATUS_MAX = 7;
 
 	/**
 	 * StorageNotAvailableException constructor.
@@ -77,7 +78,7 @@ class StorageNotAvailableException extends HintException {
 			case self::STATUS_ERROR:
 				return 'error';
 			case self::STATUS_INDETERMINATE:
-				return 'indeterminate';
+				return 'air gap active';
 			case self::STATUS_UNAUTHORIZED:
 				return 'unauthorized';
 			case self::STATUS_TIMEOUT:
